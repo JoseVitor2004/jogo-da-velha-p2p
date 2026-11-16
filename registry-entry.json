@@ -1,0 +1,7 @@
+{
+  "id": "jogodavelha",
+  "dir": "plugins/jogodavelha",
+  "build": "ant",
+  "jar": "dist/pitiupi.jogoDaVelha.jar",
+  "menuCategory": "Jogos"
+}

@@ -1,0 +1,27 @@
+JOGO DA VELHA - COMO CORRIGIR O ARQUIVO COM 96 ERROS
+
+ATENCAO: Nao junte os 4 arquivos Java em um unico arquivo jogoDaVelha.java.
+O documento CODIGO-FONTE-JOGO-DA-VELHA.txt era apenas para leitura.
+
+PASSO 1: Extraia este ZIP (botao direito > Extrair tudo).
+PASSO 2: Copie a pasta 'jogodavelha' inteira para a pasta 'plugins' do Pitiupi baixado do GitHub.
+          O arquivo deve ficar em: pitiupi\plugins\jogodavelha\build.xml
+PASSO 3: No VS Code, clique Arquivo > Abrir Pasta e escolha 'jogodavelha'.
+PASSO 4: Clique na setinha de 'src', 'pitiupi' e 'jogodavelha'.
+          Os quatro arquivos de verdade estao em:
+          src\pitiupi\jogodavelha\TicTacToePlugin.java
+          src\pitiupi\jogodavelha\core\GameSession.java
+          src\pitiupi\jogodavelha\protocol\GameMessage.java
+          src\pitiupi\jogodavelha\ui\GamePanel.java
+PASSO 5: Para COMPILAR corretamente, nao clique em Run Java File.
+          Primeiro compile o nucleo: abra CMD dentro de pitiupi\pitiupi e digite: ant jar
+          Depois abra CMD dentro de pitiupi\plugins\jogodavelha e digite: ant jar
+          O plugin gerado sera dist\pitiupi.jogoDaVelha.jar
+
+Se o VS Code ainda mostrar 'import pitiupi cannot be resolved', isso pode ser a configuracao
+do editor (dependencias), nao necessariamente um erro de sintaxe do codigo. O teste final
+e' executar 'ant jar' com o JAR do nucleo original Pitiupi disponivel.
+
+Se 'ant jar' apresentar BUILD FAILED, copie a mensagem final do CMD para diagnostico.
+O JAR precompilado incluido no ZIP foi gerado com uma API simulada, nao validado
+com o nucleo original.
