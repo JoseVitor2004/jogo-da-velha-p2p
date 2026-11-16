@@ -2,8 +2,6 @@
 
 Trabalho acadêmico: plugin com **comunicação individual (unicast) por TCP**. Dois jogadores usam o Pitiupi em computadores diferentes na rede local, trocam um convite, jogam alternadamente e recebem o resultado. Não existe servidor próprio; cada máquina é um peer e utiliza a infraestrutura de rede do Pitiupi.
 
-A implementação foi preparada para a API `pitiupi.models.Plugin` da branch `main` do repositório `https://git.alice.ufsj.edu.br/fls/pitiupi`, consultada em novembro de 2026. Consulte [`PROTOCOLO.md`](PROTOCOLO.md) para o protocolo JVD/1 e [`TESTES.md`](TESTES.md) para a validação.
-
 ## Arquivos
 
 ```
